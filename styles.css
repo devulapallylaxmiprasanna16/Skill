@@ -21,7 +21,7 @@ body {
 /* Home Section */
 .home-section {
   padding: 4rem 0;
-  background: url('lax.webp');
+  background: url('laxxx.avif');
   background-size: cover;
   min-height: 80vh;
   display: flex;
@@ -62,109 +62,302 @@ body {
   transform: translateY(-2px);
 }
 
-/* About Section */
+/* General Section Styling */
 #about-us {
-  padding: 3rem 0;
-  background: #f8f9fa;
+  background: linear-gradient(to bottom, #141E30, #243B55); /* Dark gradient */
+  color: white;
   text-align: center;
+  padding: 50px 20px;
 }
 
-.founder-card {
-  background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1.4rem auto;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column; /* Changed to column for better centering */
-  align-items: center;
-  text-align: center; /* Center text */
-  width: 80%;
-  max-width: 450px;
-  gap: 1rem;
-}
-
-.founder-card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 5%;
-  object-fit: cover;
-}
-
-.founder-info h3 {
-  font-size: 1.4rem;
+/* Heading Styling */
+.heading {
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 30px;
+  color: #00A8E8; /* Light blue heading */
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Founder Card */
+.founder-card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+  backdrop-filter: blur(10px); /* Glass effect */
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 168, 232, 0.6); /* Glowing blue shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+}
+
+/* Hover Effect */
+.founder-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 168, 232, 0.9); /* Stronger glow on hover */
+}
+
+/* Founder Image */
+.founder-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00A8E8; /* Light blue border */
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Founder Info */
+.founder-info h3 {
+  font-size: 1.6rem;
+  color: #00A8E8;
+  margin-bottom: 5px;
 }
 
 .founder-info h4 {
   font-size: 1.2rem;
-  color: #777;
-  margin-top: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #FFD700; /* Gold color */
 }
 
-.founder-info p {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 1rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 0.8rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
+/* Social Media Links */
 .social-links a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin: 5px;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
 }
 
+/* Social Media Hover Effects */
 .social-links a:hover {
-  color: #007bff;
+  color: #00A8E8; /* Light blue glow */
+  transform: scale(1.2);
 }
 
-/* Services Section */
+/* General Section Styling */
 #services {
-  padding: 4rem 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Deep ocean gradient */
+  color: white;
   text-align: center;
+  padding: 80px 20px;
 }
 
+/* Heading Styling */
+.section-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #00CFFF; /* Vibrant Cyan */
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(0, 207, 255, 0.8);
+}
+
+/* Subheading */
+.section-subheading {
+  font-size: 1.4rem;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+/* Container */
 .services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
 }
 
+/* Service Card */
 .service-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background: white; /* White card */
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Soft glow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Hover Effect */
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(0, 168, 232, 0.5); /* Blue glow effect */
 }
 
-/* Contact Section */
+/* Service Icon */
+.service-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px #00CFFF);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Service Title */
+.service-card h3 {
+  font-size: 1.8rem;
+  color: #141E30; /* Dark color for contrast */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Service Description */
+.service-card p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #444; /* Cool gray tone */
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  display: inline-block;
+  background: #00CFFF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.learn-more-btn:hover {
+  background: #0078A0;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-card {
+      max-width: 100%;
+  }
+}
+
+
+/* General Section Styling */
 .contact-section {
-  padding: 4rem 0;
-  background: #f8f9fa;
-  text-align: center; /* Centered Contact Us */
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* Dark gradient */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
 }
 
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
+/* Contact Container */
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Gold glow effect */
 }
 
+/* Contact Heading */
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #FFD700; /* Gold color */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Contact Description */
+.contact-description {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Input Group */
 .input-group {
-  margin-bottom: 1.5rem;
+  text-align: left;
+  margin-bottom: 20px;
 }
+
+/* Input Labels */
+.input-group label {
+  font-size: 1.2rem;
+  color: #FFD700; /* Gold */
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #FFD700; /* Gold border */
+  border-radius: 8px;
+  background: black;
+  color: white;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glow Effect on Focus */
+.input-group input:focus,
+.input-group textarea:focus {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+/* Send Button */
+.send-btn {
+  background: #FFD700; /* Gold */
+  color: black;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.send-btn:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* Form Status */
+.form-status {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #FFD700; /* Gold */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+      width: 90%;
+  }
+}
+
 
 /* Footer */
 .footer {
@@ -372,4 +565,12 @@ input, textarea {
   width: 40px; /* Adjust size */
   height: auto;
   margin-right: auto; /* Pushes everything else to the right */
+}
+
+.custom-hr {
+  border: none; /* Remove default border */
+  height: 3px; /* Thickness of the line */
+  width: 50%; /* Half the width of the page */
+  background-color: gold; /* Gold color */
+  margin: 20px auto; /* Center the line */
 }
