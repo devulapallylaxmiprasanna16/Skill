@@ -35,3 +35,16 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   // Reset form after submission
   document.getElementById("contactForm").reset();
 });
+
+
+
+// Toggle menu on click
+document.getElementById('menuToggle').addEventListener('click', function () {
+  document.getElementById('navbarContent').classList.toggle('show');
+});
+
+
+
+
+
+

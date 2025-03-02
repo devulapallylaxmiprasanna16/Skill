@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skill Sage</title>
+  <link rel="icon" type="image" href="logo.jpg">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
@@ -18,29 +19,33 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
-      <!-- Company Name -->
-      <a class="navbar-brand" href="#">SKILL SAGE</a>
-      <!-- Hamburger Menu -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" 
-              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
-
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contactForm">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
+  
+      <!-- Navbar -->
+      <nav class="navbar">
+          <div class="container">
+              <!-- Company Name -->
+              <a class="navbar-brand" href="#">SKILL SAGE</a>
+              <img src="logo.jpg" alt="Skill Sage Logo" class="logo"> 
+              <!-- Hamburger Menu -->
+              <button class="navbar-toggler" id="menuToggle">
+                  ☰
+              </button>
+  
+              <!-- Navbar Links -->
+              <div class="nav-links" id="navbarContent">
+                  <ul>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#about-us">About Us</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#contactForm">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  
+  
+  
  
  <!-- Home Section -->
 <section id="home" class="home-section">

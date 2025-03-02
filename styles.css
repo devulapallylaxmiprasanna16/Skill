@@ -15,6 +15,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #333 !important;
+  
 }
 
 /* Home Section */
@@ -22,7 +23,7 @@ body {
   padding: 4rem 0;
   background: url('lax.webp');
   background-size: cover;
-  min-height: 130vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -277,4 +278,98 @@ input, textarea {
   border-radius: 10px; /* Optional: Adds rounded corners */
   display: block;
   margin: 0 auto 10px; /* Centers the image and adds spacing */
+}
+
+
+
+
+
+
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.navbar-toggler {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Hidden on large screens */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-toggler {
+      display: block; /* Show hamburger icon on small screens */
+  }
+
+  .nav-links {
+      display: none; /* Hide links initially */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav-links ul {
+      flex-direction: column;
+  }
+
+  .nav-links ul li {
+      margin: 10px 0;
+  }
+
+  .nav-links.show {
+      display: block; /* Show menu when toggled */
+  }
+}
+
+
+
+/* Logo Container (Aligned to Left) */
+.logo-container {
+  margin-right: auto; /* Pushes everything else to the right */
+}
+
+/* Logo Styling */
+.logo {
+  width: 40px; /* Adjust size */
+  height: auto;
+  margin-right: auto; /* Pushes everything else to the right */
 }
