@@ -22,7 +22,7 @@ body {
   padding: 4rem 0;
   background: url('lax.webp');
   background-size: cover;
-  min-height: 80vh;
+  min-height: 130vh;
   display: flex;
   align-items: center;
 }
@@ -167,7 +167,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #A9B5DF;
+  background:black;
   color: white;
   padding: 3rem 0 1rem;
 }
