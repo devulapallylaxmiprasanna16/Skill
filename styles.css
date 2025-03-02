@@ -271,8 +271,10 @@ input, textarea {
 }
 
 .service-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height to maintain uniformity */
+  object-fit: cover; /* Ensures the image fits without distortion */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  display: block;
+  margin: 0 auto 10px; /* Centers the image and adds spacing */
 }
