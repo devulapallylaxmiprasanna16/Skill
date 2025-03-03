@@ -45,6 +45,17 @@ document.getElementById('menuToggle').addEventListener('click', function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  let heading = document.querySelector(".highlight-text");
+
+  setInterval(() => {
+      heading.style.textShadow =
+          `0 0 ${10 + Math.random() * 10}px rgba(255, 215, 0, 0.9), 
+           0 0 ${20 + Math.random() * 10}px rgba(255, 215, 0, 0.8)`;
+  }, 1000);
+});
+
+
 
 
 
